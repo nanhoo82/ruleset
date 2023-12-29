@@ -668,7 +668,7 @@ rules:
   - RULE-SET,ChinaIp,DIRECT
   - RULE-SET,direct,DIRECT
   - RULE-SET,telegramcidr,🚂 低速节点
-  - RULE-SET,defined,📔 漫画柜专线
+  - RULE-SET,myown,📔 漫画柜专线
   - RULE-SET,youtube,🇭🇰 香港节点
   - RULE-SET,streaming,🚅 高速节点
   - RULE-SET,proxy,♾️ 节点选择
