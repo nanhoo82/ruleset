@@ -656,7 +656,6 @@ rules:
   - PROCESS-NAME,curl,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,BanAD,🛑 全球拦截
-  - RULE-SET,BanProgramAD,🛑 全球拦截
   - RULE-SET,reject,🛑 全球拦截
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
