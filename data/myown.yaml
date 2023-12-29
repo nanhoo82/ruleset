@@ -1,0 +1,19 @@
+# 内容：Clash自定义分流规则-走漫画柜专线
+# 包含分流网站：漫画柜，抖音国际版
+payload:
+  - DOMAIN-SUFFIX,manhuagui.com
+  - DOMAIN-SUFFIX,hamreus.com
+  - DOMAIN-SUFFIX,chg009.fun
+  - DOMAIN-SUFFIX,jsdelivr.net
+  - DOMAIN-SUFFIX,ninghaixin.club
+  # > TikTok
+  - PROCESS-NAME,com.ss.android.ugc.trill
+  - DOMAIN-SUFFIX,byteoversea.com
+  - DOMAIN-SUFFIX,ibytedtos.com
+  - DOMAIN-SUFFIX,muscdn.com
+  - DOMAIN-SUFFIX,musical.ly
+  - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,tik-tokapi.com
+  - DOMAIN-SUFFIX,tiktokcdn.com
+  - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-KEYWORD,tiktokcdn-
