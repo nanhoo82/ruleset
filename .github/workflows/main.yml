@@ -20,8 +20,8 @@ jobs:
       - name: Move Files to Storage
         run: |
           # This will move any updated files in the remote repository to the local storage repository
-          cd remote-repo
-          cp /path/to/remote/files/* /path/to/local/storage
+          cd Clash/Providers
+          cp /Clash/Providers/* /iptv
 
       - name: Upload Files to Storage Repo
         uses: actions/upload-artifact@v2
