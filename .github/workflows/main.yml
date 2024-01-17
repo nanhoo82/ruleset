@@ -13,7 +13,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: ACL4SSR/ACL4SSR
-          path: remote-repo  # Creates a folder named "remote-repo" to store the checked-out repository
+          ref: master
+          path: /tree/master/Clash/Providers
+          #path: remote-repo  # Creates a folder named "remote-repo" to store the checked-out repository
 
       - name: Move Files to Storage
         run: |
