@@ -21,7 +21,7 @@ jobs:
         run: |
           # This will move any updated files in the remote repository to the local storage repository
           cd remote-repo
-          mv /path/to/remote/files/* /path/to/local/storage
+          cp /path/to/remote/files/* /path/to/local/storage
 
       - name: Upload Files to Storage Repo
         uses: actions/upload-artifact@v2
