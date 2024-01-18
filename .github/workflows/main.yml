@@ -17,20 +17,8 @@ jobs:
           path: Clash/Providers
           #path: remote-repo  # Creates a folder named "remote-repo" to store the checked-out repository
 
-      - name: Move Files to Storage
+      - name: Copy Files to Storage
         run: |
           # This will move any updated files in the remote repository to the local storage repository
           cd Clash/Providers
           cp /Clash/Providers/* /iptv
-
-      - name: Upload Files to Storage Repo
-        uses: actions/upload-artifact@v2
-        with:
-          name: files
-          path: /iptv/to/local/storage
-
-      - name: Download Files from Storage Repo
-        uses: actions/download-artifact@v2
-        with:
-          name: files
-          path: /iptv/to/download/location
