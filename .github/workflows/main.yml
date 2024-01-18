@@ -17,7 +17,8 @@ jobs:
           path: repo
 
       - name: Copy Files to Storage
-        run: |
-          # This will copy any updated files in the remote repository to the local storage repository
-          cd repo
-          cp ACL4SSR/Clash/Providers/* /repo
+        uses: Repositorios-Actions/copy-file-to@1.0.1
+        with:
+          work_dir:Clash/Providers
+          file:Apple.yaml
+          to:repo
