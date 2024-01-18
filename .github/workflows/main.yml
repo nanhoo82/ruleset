@@ -22,4 +22,4 @@ jobs:
           # This will move any updated files in the remote repository to the local storage repository
           mkdir -p ./tmp/
           cd ./Clash/Providers
-          cp ./Clash/Providers/* /iptv
+          cp ./Clash/Providers/* ./iptv
