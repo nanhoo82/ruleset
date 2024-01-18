@@ -14,11 +14,11 @@ jobs:
         with:
           repository: ACL4SSR/ACL4SSR
           ref: master
-          path: Clash/Providers
+          path: ./Clash/Providers
           #path: remote-repo  # Creates a folder named "remote-repo" to store the checked-out repository
 
       - name: Copy Files to Storage
         run: |
           # This will move any updated files in the remote repository to the local storage repository
-          cd Clash/Providers
-          cp /Clash/Providers/* /iptv
+          cd ./Clash/Providers
+          copy ./Clash/Providers/* /iptv
