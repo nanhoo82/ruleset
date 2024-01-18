@@ -9,13 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Remote Repo
-        uses: actions/checkout@v2
-        with:
-          repository: ACL4SSR/ACL4SSR
-          ref: master
-          path: repo
-
       - name: Copy Files to Storage
         run: |
           cd repo
