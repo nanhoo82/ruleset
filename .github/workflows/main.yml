@@ -18,6 +18,6 @@ jobs:
 
       - name: Copy Files to Storage
         run: |
-          # This will move any updated files in the remote repository to the local storage repository
-          cd repo
+          # This will copy any updated files in the remote repository to the local storage repository
+          mkdir -p /repo/rule
           cp ./Clash/Providers/* /repo/rule
