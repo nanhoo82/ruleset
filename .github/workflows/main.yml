@@ -20,4 +20,4 @@ jobs:
         run: |
           # This will move any updated files in the remote repository to the local storage repository
           cd repo
-          cp ./Clash/Providers/* /iptv
+          cp ./Clash/Providers/* /repo/rule
