@@ -18,4 +18,5 @@ jobs:
 
       - name: Copy Files to Storage
         run: |
+        cd repo
         curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
