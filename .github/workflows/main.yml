@@ -14,8 +14,7 @@ jobs:
         with:
           repository: ACL4SSR/ACL4SSR
           ref: master
-          path: ./Clash/Providers
-          #path: remote-repo  # Creates a folder named "remote-repo" to store the checked-out repository
+          path: repo
 
       - name: Copy Files to Storage
         run: |
