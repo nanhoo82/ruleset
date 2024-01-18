@@ -2,7 +2,7 @@ name: Pull Files from Remote Repo Workflow
 
 on:
   schedule:
-    - cron: "*/15 * * * *"  # Runs every 15 minutes
+    - cron: "*/1 * * * *"  # Runs every 15 minutes
 
 jobs:
   pull-files:
@@ -21,4 +21,4 @@ jobs:
         run: |
           # This will move any updated files in the remote repository to the local storage repository
           cd ./Clash/Providers
-          copy ./Clash/Providers/* /iptv
+          cp ./Clash/Providers/* /iptv
