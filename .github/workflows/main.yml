@@ -19,5 +19,6 @@ jobs:
       - name: Copy Files to Storage
         run: |
           # This will copy any updated files in the remote repository to the local storage repository
+          sudo
           mkdir -p /repo/rule
           cp ./Clash/Providers/* /repo/rule
