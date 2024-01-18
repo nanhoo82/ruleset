@@ -20,4 +20,4 @@ jobs:
         run: |
           # This will copy any updated files in the remote repository to the local storage repository
           cd repo
-          cp /Clash/Providers/* /repo
+          cp ACL4SSR/Clash/Providers/* /repo
