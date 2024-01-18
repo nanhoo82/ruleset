@@ -17,8 +17,5 @@ jobs:
           path: repo
 
       - name: Copy Files to Storage
-        uses: Repositorios-Actions/copy-file-to@1.0.1
-        with:
-          work_dir:Clash/Providers
-          file:Apple.yaml
-          to:repo
+        run: |
+        curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
