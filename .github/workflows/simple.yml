@@ -22,12 +22,12 @@ jobs:
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
           git config --local user.email "nanhoo82@outlook.com"
           git config --local user.name "nanhoo82"
+          cd repo
           ls
           git add BanAD.yaml
           git commit -a -m "Add changes"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.8.0  
         with:
-          directory: ./repo
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
