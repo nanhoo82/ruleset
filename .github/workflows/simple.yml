@@ -16,12 +16,15 @@ jobs:
       - name: List files in the repository
         run: |
           cd repo
-          rm -f BanAD.yaml
+          rm -r *
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
+          curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+          curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml
+          curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
           git config --local user.email "nanhoo82@outlook.com"
           git config --local user.name "nanhoo82"
-          ls
-          git add BanAD.yaml
+          git add --all
+          #git add BanAD.yaml
           #git commit -a -m "Add changes"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.8.0  
