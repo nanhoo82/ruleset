@@ -1,14 +1,16 @@
-name: Pull request labeler
-on: 
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
    workflow_dispatch:
-
 jobs:
-  triage:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
     steps:
-      - uses: actions/labeler@v4
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Clean files
+        run: |
+          ls
+          cd repo
+          ls
+      - run: echo "🍏 This job's status is ${{ job.status }}."
