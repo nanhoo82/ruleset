@@ -1,8 +1,6 @@
 name: Pull Files from Remote Repo Workflow 
 
-on:
-  schedule:
-    - cron: "*/6 * * * *"  # Runs every 15 minutes
+on: push
 
 jobs:
   pull-files:
