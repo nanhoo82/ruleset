@@ -28,6 +28,6 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.8.0  
         with:
-          directory: ./ruleset/repo
+          directory: ./repo
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
