@@ -21,18 +21,14 @@ jobs:
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
+          ls
           git config --local user.email "nanhoo82@outlook.com"
           git config --local user.name "nanhoo82"
           git add BanAD.yaml
           git add LocalAreaNetwork.yaml
           git add ChinaIp.yaml
           git add ChinaDomain.yaml
-          #git add BanAD.yaml
-          #git commit -a -m "Add changes"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.8.0  
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: repo
-          force_with_lease: true
-      - run: echo "🍏 This job's status is ${{ job.status }}."
