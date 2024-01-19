@@ -18,6 +18,7 @@ jobs:
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
           git config --local user.email "nanhoo82@outlook.com"
           git config --local user.name "nanhoo82"
+          ls
           git rm BanAD.yaml
           git add BanAD.yaml
           git commit -a -m "Add changes"
