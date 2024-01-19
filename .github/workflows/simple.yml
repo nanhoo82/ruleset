@@ -15,13 +15,10 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          cd repo
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
           ls
+          git config --local user.email "nanhoo82@outlook.com"
+          git config --local user.name "nanhoo82"
+          git commit -a -m "Add changes"
           #ls ${{ github.workspace }}
-      - name: make file
-        run: |
-          touch new_file.js
-          cat "${{ github.workspace }}/my_file.js" > new_file.js
-        shell: bash
       - run: echo "🍏 This job's status is ${{ job.status }}."
