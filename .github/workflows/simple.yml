@@ -1,0 +1,23 @@
+name: My Workflow
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Set up the working directory
+      run: |
+        mkdir my_directory
+      working-directory: ./my_directory
+
+    - name: Run a command
+      run: |
+        echo "This command runs in the 'my_directory' directory."
+      working-directory: ./my_directory
