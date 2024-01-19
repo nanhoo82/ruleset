@@ -22,6 +22,6 @@ jobs:
       - name: make file
         run: |
           touch new_file.js
-          cat "${{ github.action_path }}/my_file.js" > new_file.js
+          cat "${{ github.workspace }}/my_file.js" > new_file.js
         shell: bash
       - run: echo "🍏 This job's status is ${{ job.status }}."
