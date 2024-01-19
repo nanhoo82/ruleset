@@ -2,21 +2,44 @@ name: My Workflow
 
 on:
    workflow_dispatch:
+   paths:
+      - 'ruleset/repo/dd.me'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-    - name: Set up the working directory
+    - name: Get list of Markdown files
       run: |
-        sudo mkdir -p /my_directory
-      working-directory: ./my_directory
-
-    - name: Run a command
+        cd blog-posts
+        files=($(ls *.md))
+        json_array=()
+        for file in "${files[@]}"
+        do
+          date_string=$(grep -E '^date: ' "$file" | cut -d' ' -f2)
+          # Use the date command to extract the year, month, and date
+          year=$(date -d "$date_string" +%Y)
+          month=$(date -d "$date_string" +%m)
+          day=$(date -d "$date_string" +%d)
+          json_array+=($(echo "{\"file\":\"$file\",\"date\":\"$date_string\",\"year\":\"$year\",\"month\":\"$month\",\"day\":\"$day\"}"))
+        done
+        echo "[$(IFS=,; echo "${json_array[*]}" | jq -s -c 'sort_by(.date)')]" > ../static/blog.json
+        
+    - name: Remove trailing comma
       run: |
-        echo "This command runs in the 'my_directory' directory."
-      working-directory: ./my_directory
+        sed -i '$ s/,$//' static/blog.json
+        
+    - name: Commit changes
+      run: |
+        git config --global user.email "no-reply@github.com"
+        git config --global user.name "GitHub Actions"
+        git add static/blog.json
+        git commit -m "Update blog.json"
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
