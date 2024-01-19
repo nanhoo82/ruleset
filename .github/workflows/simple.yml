@@ -16,6 +16,7 @@ jobs:
       - name: Clean files
         run: |
           rm -f BanAD.yaml
+          ls
       - name: List files in the repository
         run: |
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
@@ -27,6 +28,6 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.8.0  
         with:
-          directory: /repo
+          directory: ./ruleset/repo
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
