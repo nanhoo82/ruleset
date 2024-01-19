@@ -16,6 +16,7 @@ jobs:
       - name: List files in the repository
         run: |
           cd repo
+          curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
           ls
           #ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
