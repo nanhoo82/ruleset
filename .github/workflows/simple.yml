@@ -16,11 +16,10 @@ jobs:
       - name: List files in the repository
         run: |
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
-          ls
           git config --local user.email "nanhoo82@outlook.com"
           git config --local user.name "nanhoo82"
-          git add --all
-        shell: bash
+          #git add --all
+          git commit -a -m "Add changes"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.8.0  
         with:
