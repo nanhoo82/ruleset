@@ -19,6 +19,7 @@ jobs:
           ls
           git config --local user.email "nanhoo82@outlook.com"
           git config --local user.name "nanhoo82"
-          git add .
+          git add --all
+        shell: bash
           #ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
