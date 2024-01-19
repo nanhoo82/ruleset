@@ -19,4 +19,9 @@ jobs:
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
           ls
           #ls ${{ github.workspace }}
+      - name: make file
+        run: |
+          touch new_file.js
+          cat "${{ github.action_path }}/my_file.js" > new_file.js
+        shell: bash
       - run: echo "🍏 This job's status is ${{ job.status }}."
