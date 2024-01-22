@@ -16,14 +16,18 @@ jobs:
       - name: Pull file from repository & delete old file in the runner
         run: |
           cd repo
-          rm -r *
+          #rm -r *
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml
           curl -O https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
-          ls
+          #ls
           git config --local user.email "nanhoo82@outlook.com"
           git config --local user.name "nanhoo82"
+          git rm BanAD.yaml
+          git rm LocalAreaNetwork.yaml
+          git rm ChinaIp.yaml
+          git rm ChinaDomain.yaml
           git add BanAD.yaml
           git add LocalAreaNetwork.yaml
           git add ChinaIp.yaml
