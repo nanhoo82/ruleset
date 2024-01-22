@@ -28,7 +28,6 @@ jobs:
           git add LocalAreaNetwork.yaml
           git add ChinaIp.yaml
           git add ChinaDomain.yaml
-          git add readme.md
           git commit -a -m "Add changes"
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.8.0  
