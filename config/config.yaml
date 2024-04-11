@@ -1,4 +1,4 @@
-# 内容：OpenClash配置文件
+# 内容：OpenClash配置文件11
 port: 7890
 socks-port: 7891
 allow-lan: true
