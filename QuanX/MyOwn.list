@@ -1,8 +1,8 @@
 # 内容：QuanX自定义分流规则-走漫画柜专线
 # 包含分流网站：漫画柜
-  - HOST-SUFFIX,manhuagui.com,漫画柜专线
-  - HOST-SUFFIX,hamreus.com,漫画柜专线
-  - HOST-SUFFIX,chg009.fun,日本节点
-  - HOST-SUFFIX,jsdelivr.net,日本节点
-  - HOST-SUFFIX,ninghaixin.club,日本节点
-  - HOST-SUFFIX,strava.com,香港节点
+  - HOST-SUFFIX,manhuagui.com
+  - HOST-SUFFIX,hamreus.com
+  - HOST-SUFFIX,chg009.fun
+  - HOST-SUFFIX,jsdelivr.net
+  - HOST-SUFFIX,ninghaixin.club
+  - HOST-SUFFIX,strava.com
