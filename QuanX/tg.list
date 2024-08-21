@@ -1,13 +1,7 @@
 # 内容：Telegram
 # 数量：13条
 # DOMAIN-KEYWORD,telegram
-  - DOMAIN-SUFFIX,t.me
-  - DOMAIN-SUFFIX,tdesktop.com
-  - DOMAIN-SUFFIX,telegra.ph
-  - DOMAIN-SUFFIX,telegram.me
-  - DOMAIN-SUFFIX,telegram.org
-  - DOMAIN-SUFFIX,telesco.pe
-# DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,t.me
 # DOMAIN-SUFFIX,tdesktop.com
 # DOMAIN-SUFFIX,telegra.ph
 # DOMAIN-SUFFIX,telegram.me
