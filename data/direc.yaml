@@ -5,9 +5,9 @@ payload:
   - DOMAIN-SUFFIX,1password.com
   - DOMAIN-SUFFIX,dnsomatic.com
   - DOMAIN-SUFFIX,opendns.com
-  - DOMAIN-SUFFIX,agedm
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - DOMAIN,zhangn.i234.me,DIRECT
-  - DOMAIN-SUFFIX,nasio.me,DIRECT
+  - DOMAIN-SUFFIX,agedm.org
+  - DOMAIN,clash.razord.top
+  - DOMAIN,yacd.haishan.me
+  - DOMAIN,zhangn.i234.me
+  - DOMAIN-SUFFIX,nasio.me
   - PROCESS-NAME,zerotier
