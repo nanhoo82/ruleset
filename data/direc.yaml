@@ -1,1 +1,13 @@
-ddddd
+# 内容：Clash自定义分流规则-自定义直连
+# 包含分流网站：漫画柜，抖音国际版
+payload:
+  - DOMAIN-SUFFIX,prod.dl.playstation.net
+  - DOMAIN-SUFFIX,1password.com
+  - DOMAIN-SUFFIX,dnsomatic.com
+  - DOMAIN-SUFFIX,opendns.com
+  - DOMAIN-SUFFIX,agedm
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,zhangn.i234.me,DIRECT
+  - DOMAIN-SUFFIX,nasio.me,DIRECT
+  - PROCESS-NAME,zerotier
