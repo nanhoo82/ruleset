@@ -6,8 +6,9 @@ payload:
   - DOMAIN-SUFFIX,dnsomatic.com
   - DOMAIN-SUFFIX,opendns.com
   - DOMAIN-SUFFIX,agedm.org
+  - DOMAIN-SUFFIX,nasio.me
+  - DOMAIN-SUFFIX,strava.com
   - DOMAIN,clash.razord.top
   - DOMAIN,yacd.haishan.me
   - DOMAIN,zhangn.i234.me
-  - DOMAIN-SUFFIX,nasio.me
   - PROCESS-NAME,zerotier
