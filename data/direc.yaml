@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,agedm.org
   - DOMAIN-SUFFIX,nasio.me
   - DOMAIN-SUFFIX,strava.com
+  - DOMAIN-SUFFIX,autodesk.com
   - DOMAIN,clash.razord.top
   - DOMAIN,yacd.haishan.me
   - DOMAIN,zhangn.i234.me
