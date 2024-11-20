@@ -1,2 +1,3 @@
 # 内容：QuanX自定义分流规则-直连
   - HOST-SUFFIX,strava.com
+  - HOST-SUFFIX,garmin.com
