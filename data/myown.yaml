@@ -6,3 +6,4 @@ payload:
   - DOMAIN-SUFFIX,chg009.fun
   - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,ninghaixin.club
+  - IP-CIDR,202.63.172.111/32
