@@ -2,6 +2,7 @@
 # 包含分流网站：漫画柜，抖音国际版
 payload:
   - DOMAIN-SUFFIX,manhuagui.com
+  - DOMAIN-SUFFIX,mhgui.com
   - DOMAIN-SUFFIX,hamreus.com
   - DOMAIN-SUFFIX,chg009.fun
   - DOMAIN-SUFFIX,jsdelivr.net
