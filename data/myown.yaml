@@ -7,6 +7,6 @@ payload:
   - DOMAIN-SUFFIX,chg009.fun
   - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,ninghaixin.club
+  - DOMAIN-SUFFIX,mmstat.com
   - IP-CIDR,202.63.172.111/32
-  - DST-PORT,21115
-  - DST-PORT,21116
+  - DST-PORT,7787
