@@ -1,5 +1,4 @@
 # 内容：Clash自定义分流规则-走游戏专线
 # 包含分流网站：米哈游
 payload:
-  - DOMAIN-KEYWORD,hoyoverse
-  - DST-PORT,20501
+  - DOMAIN-SUFFIX,hoyoverse.com
