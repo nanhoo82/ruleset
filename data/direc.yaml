@@ -13,6 +13,3 @@ payload:
   - DOMAIN,clash.razord.top
   - DOMAIN,yacd.haishan.me
   - DOMAIN,zhangn.i234.me
-  - PROCESS-NAME,zerotier
-  - PROCESS-NAME,wechat
-  - PROCESS-NAME,qq
