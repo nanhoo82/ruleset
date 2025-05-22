@@ -8,4 +8,5 @@ payload:
   - DOMAIN-SUFFIX,jsdelivr.net
   - DOMAIN-SUFFIX,ninghaixin.club
   - IP-CIDR,202.63.172.111/32
+  - DST-PORT,21115
   - DST-PORT,21116
