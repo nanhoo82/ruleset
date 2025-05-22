@@ -5,6 +5,4 @@
   - HOST-SUFFIX,chg009.fun
   - HOST-SUFFIX,jsdelivr.net
   - HOST-SUFFIX,ninghaixin.club
-  - HOST-SUFFIX,mmstat.com
   - IP-CIDR,202.63.172.111/32
-  - DST-PORT,7787
