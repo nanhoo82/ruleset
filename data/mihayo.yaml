@@ -2,3 +2,4 @@
 # 包含分流网站：米哈游
 payload:
   - DOMAIN-SUFFIX,hoyoverse.com
+  - DST-PORT,20501
