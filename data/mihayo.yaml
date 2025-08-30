@@ -4,3 +4,5 @@ payload:
 #  - DOMAIN-SUFFIX,hoyoverse.com
   - DST-PORT,20501
   - DST-PORT,3075
+  - DST-PORT,31433
+  - DST-PORT,3478
