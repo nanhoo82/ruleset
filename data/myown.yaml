@@ -9,5 +9,4 @@ payload:
   - DOMAIN-SUFFIX,ninghaixin.club
   - DOMAIN-SUFFIX,hoyoverse.com
   - DOMAIN-SUFFIX,hoyolab.com
-  - DOMAIN-KEYWORD,garmin
   - IP-CIDR,202.63.172.111/32
